@@ -1,0 +1,77 @@
+
+.App {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: 'Arial', sans-serif;
+}
+
+.app-title {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+
+.line-stats {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.line-stats p {
+  margin: 0.3rem 0;
+}
+
+
+.line-filters {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.line-filter {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+}
+
+.line-filter label {
+  margin-bottom: 0.5rem;
+}
+
+.line-filter input,
+.line-filter select {
+  padding: 0.3rem;
+  font-size: 1rem;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+  outline: none;
+}
+
+/* Table styling */
+.pokemon-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+.pokemon-table th,
+.pokemon-table td {
+  border: 1px solid #444;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.pokemon-table th {
+  background-color: #333;
+}
+
+.pokemon-table tr:nth-child(even) {
+  background-color: #1f1f1f;
+}
