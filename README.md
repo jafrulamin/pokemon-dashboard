@@ -1,58 +1,63 @@
-# Web Development Project 5 - Pokémon Dashboard
+# Web Development Project 6 - Pokémon Dashboard
 
 Submitted by: **Jafrul Amin**
 
-This web app displays a dashboard that fetches data from the PokéAPI. It shows a list of Pokémon along with summary statistics such as total count, average base experience, and the most common Pokémon type. Users can search for Pokémon by name and filter the list by Pokémon type using a dark-themed, line-by-line layout.
+This web app: **A Pokemon dashboard that displays information about the first 151 Pokemon, including their types, stats, and detailed information. The app features interactive charts showing Pokemon type distribution and average base stats.**
 
-Time spent: **8** hours spent in total
+Time spent: **9** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [x] **The site has a dashboard displaying a list of data fetched using an API call**
-  - The dashboard displays at least 10 unique Pokémon, one per row.
-  - Each row includes multiple features such as the Pokémon's ID, name, base experience, and types.
-- [x] **`useEffect` React hook and `async`/`await` are used**
-- [x] **The app dashboard includes at least three summary statistics about the data**
-  - Total number of Pokémon
-  - Average base experience of the Pokémon
-  - Most common Pokémon type
-- [x] **A search bar allows the user to search for an item in the fetched data**
-  - The search bar correctly filters the Pokémon list, displaying only those that match the search query.
-  - The list of results dynamically updates as the user types into the search bar.
-- [x] **An additional filter allows the user to restrict displayed items by specified categories**
-  - The filter restricts Pokémon by type (a different attribute than the search bar).
-  - The filter correctly displays only those Pokémon matching the selected type.
-  - The dashboard list dynamically updates as the user adjusts the filter.
+- [x] **Clicking on an item in the list view displays more details about it**
+  - [x] Clicking on a Pokemon in the dashboard list navigates to a detail view for that Pokemon
+  - [x] Detail view includes extra information about the Pokemon not included in the dashboard view (abilities, species info, capture rate, etc.)
+  - [x] The same sidebar is displayed in detail view as in dashboard view
+  - [x] Sidebar is consistently visible in both dashboard and detail views
+- [x] **Each detail view of an item has a direct, unique URL link to that item's detail view page**
+  - [x] Each Pokemon has a unique URL in the format `/detail/:id`
+- [x] **The app includes at least two unique charts developed using the fetched data that tell an interesting story**
+  - [x] Interactive pie chart showing Pokemon type distribution
+  - [x] Bar chart displaying average base stats across all Pokemon
 
 The following **optional** features are implemented:
 
-- [x] Multiple filters can be applied simultaneously (search by name and filter by type).
-- [x] Filters use different input types:
-  - A text input for the search bar and a dropdown for the type filter.
-- [ ] The user can enter specific bounds for filter values (not applicable in this project).
+- [x] The site's customized dashboard contains more content that explains what is interesting about the data
+  - [x] Dashboard includes summary cards showing total Pokemon count, number of types, and average weight
+  - [x] Type distribution chart includes a custom legend with color-coded circles
+- [x] The site allows users to filter and search data
+  - [x] Users can search Pokemon by name or type
+  - [x] Users can filter Pokemon by type using a dropdown menu
 
 The following **additional** features are implemented:
 
-- [x] A dark-themed, line-by-line layout for a sleek user interface.
-- [x] Responsive design to ensure usability on different screen sizes.
+- [x] Responsive design that works on both desktop and mobile devices
+- [x] Custom color scheme for Pokemon types
+- [x] Interactive stat bars in detail view
+- [x] Pixelated sprite images maintaining original Pokemon game aesthetic
+- [x] Hover effects on Pokemon cards for better user interaction
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='VideoWalkthrough.gif' title='VideoWalkthrough' width='' alt='Video Walkthrough' />
+<img src='VideoWalkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with ScreenToGif
 
 ## Notes
 
-During development, one of the main challenges was managing asynchronous data fetching for multiple API calls and ensuring that the data was properly synchronized before rendering. Implementing a dark-themed, line-by-line layout also required careful CSS styling to ensure readability and a clean user interface.
+Describe any challenges encountered while building the app:
+
+- Implementing responsive charts that work well on different screen sizes
+- Managing the complex state of Pokemon data and ensuring efficient data fetching
+- Creating a custom legend for the type distribution chart
+- Ensuring consistent styling across different Pokemon types and stats
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2024] [Jafrul Amin]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
